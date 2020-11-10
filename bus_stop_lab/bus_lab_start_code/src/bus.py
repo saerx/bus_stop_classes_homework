@@ -3,5 +3,5 @@ class Bus:
         self.route_number = route_number
         self.destination = destination
 
-    def drive():
+    def drive(self):
         return "Brum brum"
