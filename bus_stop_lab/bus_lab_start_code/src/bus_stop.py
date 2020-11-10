@@ -3,5 +3,9 @@ class BusStop:
         self.name = name
         self.queue = []
 
-    # def add_to_queue(self, passenger):
+    def queue_length(self):
+        return len(self.queue)
+
+    def add_to_queue(self, passenger):
+        self.queue.append(passenger)
 
