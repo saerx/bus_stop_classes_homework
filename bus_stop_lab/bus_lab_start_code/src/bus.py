@@ -20,5 +20,6 @@ class Bus:
         self.passengers.clear()
 
     def pick_up_from_stop(self, bus_stop):
-        for passenger in bus_stop.queue:
-            self.passengers.append(passenger)
+        self.passengers.extend(bus_stop.queue)
+        # for passenger in bus_stop.queue:
+        #     self.passengers.append(passenger)
